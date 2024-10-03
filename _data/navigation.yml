@@ -1,0 +1,11 @@
+# main links
+main:
+  - title: "notes"
+    url: /notes/
+  - title: "code"
+    url: /code/
+    # - title: "projects"
+    # url: /projects/
+  - title: "cv"
+    # url: /assets/Duong_CV.pdf
+    url: https://drive.google.com/file/d/1K9jaA0uujaiQsA8V_PoV2T_qjM17jRmU/view?usp=sharing
