@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-CA"
-title                    : "lyndonduong.com"
+title                    : "dzhang0"
 title_separator          : "-"
 subtitle                 : "home" # site tagline that appears below site title in masthead
-name                     : "lyndon duong"
-description              : "lyndon's homepage"
-url                      : "https://lyndonduong.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "david zhang"
+description              : "david's homepage"
+url                      : "https://dzhang0.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "lyndond/lyndond.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "https://dzhang0.github.io/" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/lyndon_saggital_cropped.gif" # path of logo image to display in the masthead
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
