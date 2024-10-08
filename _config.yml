@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name: "david zhang"
-  avatar: "/assets/images/bio-photo.png" # path of avatar image
+  avatar: "/assets/images/bio-photo.jpg" # path of avatar image
   bio: "wireless and ml"
   location: "Toronto, ON"
   links:
