@@ -102,7 +102,7 @@ author:
       icon: "fas fa-fw fa-envelope"
       url: "mailto:ufo.zhang@mail.utoronto.ca"
     - label: "  linkedin"
-      icon: "fab fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/david-zhang-2bbb12150/"
     - label: "github.com/dzhang0"
       icon: "fab fa-fw fa-github icon-red"
@@ -118,7 +118,7 @@ author:
 footer:
   links:
     - label: "linkedin"
-      icon: "fab fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin-in"
       url: "https://www.linkedin.com/in/david-zhang-2bbb12150/"
     - label: "github"
       icon: "fab fa-fw fa-github"
