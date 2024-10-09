@@ -9,24 +9,22 @@ excerpt_separator: <!--more-->
 A no-math intuitive account of my journal publication in TWC 2024.
 <!--more-->
 
-Code for this post:
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lyndond/lyndond.github.io/blob/master/code/2023-02-10-stochastic-shape-metrics.ipynb)
-[![Open in GitHub](https://img.shields.io/badge/Open on GitHub-success.svg)](https://github.com/lyndond/lyndond.github.io/blob/master/code/2023-02-10-stochastic-shape-metrics.ipynb)
+Active sensing is a sequential sensing strategy that enables fast and high-precision sensing, specifically for mm-wave wireless applications. 
+When we talk about active sensing, we mean that the set of sensing vectors is sequentially designed as a function of existing measurements. so as more measurements become available, the sensing vector becomes better and better at sensing the target. 
 
-Code for methods in the paper:
-[![Code for methods in paper:](https://img.shields.io/badge/Open on GitHub-success.svg)](https://github.com/ahwillia/netrep)
 
-[Watch my 45min talk on shape metrics.]()
+On the right here is the beam pattern produced by the active sensing strategy, after six measurements, the sensing device can produce a very narrow beam focus toward the target, which enables high sensing accuracy.
 
-Neuroscience and machine learning experiments now produce datasets of several animals or networks performing the same task. Below are two matrices representing simultaneously recorded activities from neurons in two different networks.
 
-<div style="text-align:center"><img src="/assets/posts/activesensing/sys_model.jpg" style="width:20em"/></div>
 
-You can think of these as responses from two different animals, or two brain regions, or two deep net layers. Each column is a neuron and each row is the population response to a given stimulus condition. A fundamental question in neural representation learning & neuroscience is: Given multiple networks that were doing the same task, how related are their neural representations of the task? These two network matrices are high-dimensional, with the number of dimensions equal to the number of neurons, but for the sake of visualization, let’s assume responses each lie on some low 3D manifold of responses where each row of the matrix representing the population response to a condition is is plotted as a colored point in this space.
 
-<div style="text-align:center"><img src="/assets/posts/stochastic_shapes/pringles.png" style="width:20em" /></div>
 
-This manifold traces out a purple Pringles chip for network 1, and a green, slightly warped and rotated Pringles chip for network 2. How can we compare these representational geometric objects to each other, and how does that relationship correlate with the task? There have been many proposed methods to answer this question of network similarity, but I’m going to talk about a method and extensions to one that was proposed recently that draws from ideas from the field of **statistical shape analysis** ([Williams et al. 2022](https://arxiv.org/abs/2110.14739)).
+For example, the beam pattern below is produced by the active sensing strategy, after six measurements, the two sensing devices (intelligent surfaces) can produce a very narrow beam focus toward the target. There is constructive interference around the user and deconstructive interference outside of the proximity of the user, which enables very accurate positioning. This beampattern is otherwise difficult to achieve with conventional approaches. 
+
+<div style="text-align:center"><img src="/assets/posts/activesensing/2ris_position_active.gif" style="width:20em"/></div>
+
+
+
 
 ## Shape metrics on neural representations
 
