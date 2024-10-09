@@ -9,6 +9,8 @@ excerpt_separator: <!--more-->
 A no-math intuitive account of my journal publication in TWC 2024.
 <!--more-->
 
+[![Open In Arxiv](https://arxiv.org/abs/2312.09002)](https://arxiv.org/abs/2312.09002)
+
 Active sensing is a sequential sensing strategy that enables fast and high-precision sensing, specifically for mm-wave wireless applications. 
 When we talk about active sensing, we mean that the set of sensing vectors is sequentially designed as a function of existing measurements. As more measurements become available, the sensing vector becomes better and better at sensing the target. 
 
