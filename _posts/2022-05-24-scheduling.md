@@ -6,7 +6,7 @@ header:
     teaser: "assets/posts/scheduling/JSTSP_cover.jpg"
 excerpt_separator: <!--more-->
 ---
-My journal publication on learning based scheduling in RIS-assisted network. 
+A no-math intuitive account of my journal publication in JSTSP 2022. 
 <!--more-->
 
 ## Internship summary
@@ -37,4 +37,4 @@ The TL;DR is that a base autoencoder and hyperprior are trained on a large datas
 To allow the model to operate at different bit rates, we can train auxiliary parameters (gain modulations; pink) to control the rate-dependent output scale at each layer.
 In the paper, we show the model can be trained end-to-end, and that we can augment the DCT with learned gain modulations (quantization matrices), and hyperpriors to significantly improvement performance at a fraction of the cost of a full-blown nonlinear transform (e.g. a deep net).
 
-![architecture](/assets/posts/multirate_compression/fig_arch.png)
+![architecture](/assets/posts/scheduling/JSTSP_cover.jpg)
