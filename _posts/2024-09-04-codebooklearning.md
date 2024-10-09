@@ -22,6 +22,6 @@ In this journal, I designed an active sensing strategy for uplink localization w
 
 Below is an illustration of the beam pattern produced by the active sensing strategy. After six (or any number of) measurements, the two sensing devices (RISs 🔵) can produce a very narrow beam focus toward the target (in red 🔴). Notice that there is constructive interference around the user and deconstructive interference outside of the proximity of the user, which enables very accurate positioning. This beampattern is otherwise difficult to achieve with conventional approaches. 
 
-<div style="text-align:center"><img src="/assets/posts/activesensing/2ris_position_active.gif" style="width:20em"/></div>
+<div style="text-align:center"><img src="/assets/posts/codebooklearning/poster.jpg" style="width:50em"/></div>
 
 
