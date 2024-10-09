@@ -3,13 +3,11 @@ classes: wide
 title: Learning based scheduling
 tags: ml gnn scheduling
 header:
-    teaser: "assets/posts/scheduling/JSTSP_cover.pdf"
+    teaser: "assets/posts/scheduling/JSTSP_cover.jpg"
 excerpt_separator: <!--more-->
 ---
-My internship research project at Google on machine learning for video compression.
+My journal publication on learning based scheduling in RIS-assisted network. 
 <!--more-->
-
-I wrote about how I prepared for and passed the Google coding interview [here]({% post_url 2021-11-22-coding-interview %}).
 
 ## Internship summary
 
