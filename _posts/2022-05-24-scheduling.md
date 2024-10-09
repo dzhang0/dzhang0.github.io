@@ -9,24 +9,24 @@ excerpt_separator: <!--more-->
 A no-math intuitive account of my journal publication in JSTSP 2022. 
 <!--more-->
 
-## Internship summary
+Journal paper: <a href="https://arxiv.org/abs/2205.06396">Arxiv</a>, <a href="https://ieeexplore.ieee.org/abstract/document/9783100">IEEE</a>
 
-For my summer 2022 internship project at Google, I worked on the Open Codecs team under the Google Chrome umbrella, researching nonlinear transform methods using machine learning (e.g. deep nets) for video compression.
-The model I developed works on intra-frame prediction residuals, and largely draws inspiration from my PhD research on adaptive gain control, and [Ballé et al. (2020)](https://arxiv.org/abs/2007.03034).
+Active sensing is a sequential sensing strategy that enables fast and high-precision sensing, specifically for mm-wave wireless applications. 
+When we talk about active sensing, we mean that the set of sensing vectors is sequentially designed as a function of existing measurements. As more measurements become available, the sensing vector becomes better and better at sensing the target. 
 
-Some general takeaways:
+In this journal, I designed an active sensing strategy for uplink localization with multiple reconfigurable intelligent surfaces (RISs). The user with an unknown position repeatedly transmits pilot symbols to the base station (BS). The BS adaptively adjusts its beamforming vector and the RISs based on existing pilots received. The system diagram is as follows:
 
-- Most PhD projects were research oriented compared to e.g. undergrad intern projects, and I had tons of freedom to explore my own ideas.
-- Everyone on my team was very nice and helpful, and seemed to have a healthy work-life balance.
-- Bay Area summer weather is pretty much unbeatable, but day-to-day life was sleepy compared to NYC.
-- The internship (12-14 weeks) goes by very fast, especially since onboarding takes at least a couple weeks.
-- TensorFlow 2.0 is a pain to use and debug compared to PyTorch, but `tensorflow.data` is very nice.
-- Modern video codecs are built upon decades of heuristics and incremental engineering improvements.
-- Because of hardware limitations, we are _far_ from end-to-end machine learning-based video codecs. The current state-of-the-art is a mostly traditional signal processing with maybe a few ML modules sprinkled in. The discrete cosine transform (DCT) is simply too cheap to replace with a neural network for now.
-- Google has one giant monorepo, so you can see everybody's code. This was very useful when I was stuck on some infrastructural issue (e.g. distributed model training) and needed examples to copy and modify.
-- All internal Google tools felt like they were either in Beta, or in some stage of deprecation. It was really frustrating to follow some approved tutorial only to find that it was out-of-date and there was some new way of doing things.
-- Google's code review tools (Critique, Gerrit) are way nicer than GitHub PR reviews.
-- Fig, Google's distributed version control system based on Mercurial, is so much better than Git.
+<div style="text-align:center"><img src="/assets/posts/activesensing/sys_model.jpg" style="width:20em"/></div>
+
+Below is an illustration of the beam pattern produced by the active sensing strategy. After six (or any number of) measurements, the two sensing devices (RISs 🔵) can produce a very narrow beam focus toward the target (in red 🔴). Notice that there is constructive interference around the user and deconstructive interference outside of the proximity of the user, which enables very accurate positioning. This beampattern is otherwise difficult to achieve with conventional approaches. 
+
+<div style="text-align:center"><img src="/assets/posts/scheduling/JSTSP_cover.jpg" style="width:50em"/></div>
+
+
+## Active sensing via learning
+
+
+
 
 ## My project
 
