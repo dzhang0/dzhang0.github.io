@@ -11,6 +11,10 @@ A no-math intuitive account of my journal publication in JSTSP 2022.
 
 Journal paper: <a href="https://arxiv.org/abs/2205.06396">Arxiv</a>, <a href="https://ieeexplore.ieee.org/abstract/document/9783100">IEEE</a>
 
+
+<div style="text-align:center"><img src="/assets/posts/scheduling/JSTSP_cover.jpg" style="width:30em"/></div>
+
+
 Active sensing is a sequential sensing strategy that enables fast and high-precision sensing, specifically for mm-wave wireless applications. 
 When we talk about active sensing, we mean that the set of sensing vectors is sequentially designed as a function of existing measurements. As more measurements become available, the sensing vector becomes better and better at sensing the target. 
 
@@ -20,7 +24,6 @@ In this journal, I designed an active sensing strategy for uplink localization w
 
 Below is an illustration of the beam pattern produced by the active sensing strategy. After six (or any number of) measurements, the two sensing devices (RISs 🔵) can produce a very narrow beam focus toward the target (in red 🔴). Notice that there is constructive interference around the user and deconstructive interference outside of the proximity of the user, which enables very accurate positioning. This beampattern is otherwise difficult to achieve with conventional approaches. 
 
-<div style="text-align:center"><img src="/assets/posts/scheduling/JSTSP_cover.jpg" style="width:50em"/></div>
 
 
 ## Active sensing via learning
