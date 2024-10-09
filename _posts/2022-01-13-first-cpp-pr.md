@@ -16,7 +16,7 @@ But, you can only learn so much by doing textbook exercises and watching YouTube
 C++ seems to be the lingua franca of video game programming, and there are plenty of tutorials online about how to build simple games, but I'm not super into that.
 It made more sense to me to work on a project where I could leverage my existing skills and domain expertise (numerical linear algebra, machine learning, probabilistic models).
 
-This is what motivated me to write a tiny linear algebra matrix class to [build and train a neural network from scratch]({% post_url 2022-01-06-mlp-train-cpp %}).
+This is what motivated me to write a tiny linear algebra matrix class to [build and train a neural network from scratch].
 While this was fun, the project felt more like a one-off rather than a "real" software project.
 I watched an old [CppCon talk by Titus Winters](https://youtu.be/NOCElcMcFik), the C++ tech lead at Google, who described how writing software with long-term stability and maintainability requires a completely different mindset than what most start-ups are junior/student devs (i.e. me) are used to.
 This inspired me to contribute to a longer-term, large open-source collaboration in order to learn more about things like complex C++ library builds and unit testing.
