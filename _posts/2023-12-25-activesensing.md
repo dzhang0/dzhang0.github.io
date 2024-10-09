@@ -30,7 +30,8 @@ It is difficult to design an adaptive sequence of beams using conventional metho
 In this work, we show that machine learning can do better because it can better model the complex wireless environment and machine learning can jointly design the sequence of sensing vector to achieve the optimal performance. 
 
 The neural network architecture is shown below. The idea is that an LSTM network can be used to process the temporal input (pilots). At each sensing stage, the LSTM cell receives a new measurement and maps the measurement (along with historical measurements) to the sensing vectors in the next stage. By concatenating a chain of LSTM cells, a sequence of sensing vectors can be designed. At the end of the sensing stage, an estimated position of the user is obtained based on all received pilots. 
-<div style="text-align:center"><img src="/assets/posts/activesensing/lstm_cell.jpg" style="width:20em"/></div>
+
+<div style="text-align:center"><img src="/assets/posts/activesensing/lstm_cell.jpg" style="width:50em"/></div>
 
 
 
