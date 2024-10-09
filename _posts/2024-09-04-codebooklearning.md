@@ -9,6 +9,22 @@ excerpt_separator: <!--more-->
 A no-math intuitive account of my conference publication in SPAWC 2024.
 <!--more-->
 
+Journal paper: <a href="https://ieeexplore.ieee.org/document/10694219">IEEE</a>
+
+Background on active sensing can be found [here]({% post_url 2023-12-25-activesensing %}).
+
+Active sensing is a sequential sensing strategy that enables fast and high-precision sensing, specifically for mm-wave wireless applications. 
+When we talk about active sensing, we mean that the set of sensing vectors is sequentially designed as a function of existing measurements. As more measurements become available, the sensing vector becomes better and better at sensing the target. 
+
+In this journal, I designed an active sensing strategy for uplink localization with multiple reconfigurable intelligent surfaces (RISs). The user with an unknown position repeatedly transmits pilot symbols to the base station (BS). The BS adaptively adjusts its beamforming vector and the RISs based on existing pilots received. The system diagram is as follows:
+
+<div style="text-align:center"><img src="/assets/posts/activesensing/sys_model.jpg" style="width:20em"/></div>
+
+Below is an illustration of the beam pattern produced by the active sensing strategy. After six (or any number of) measurements, the two sensing devices (RISs 🔵) can produce a very narrow beam focus toward the target (in red 🔴). Notice that there is constructive interference around the user and deconstructive interference outside of the proximity of the user, which enables very accurate positioning. This beampattern is otherwise difficult to achieve with conventional approaches. 
+
+<div style="text-align:center"><img src="/assets/posts/activesensing/2ris_position_active.gif" style="width:20em"/></div>
+
+
 Code for this post:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lyndond/lyndond.github.io/blob/master/code/2023-02-10-stochastic-shape-metrics.ipynb)
 [![Open in GitHub](https://img.shields.io/badge/Open on GitHub-success.svg)](https://github.com/lyndond/lyndond.github.io/blob/master/code/2023-02-10-stochastic-shape-metrics.ipynb)
