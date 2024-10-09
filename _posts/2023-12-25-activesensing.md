@@ -12,14 +12,14 @@ A no-math intuitive account of my journal publication in TWC 2024.
 Active sensing is a sequential sensing strategy that enables fast and high-precision sensing, specifically for mm-wave wireless applications. 
 When we talk about active sensing, we mean that the set of sensing vectors is sequentially designed as a function of existing measurements. As more measurements become available, the sensing vector becomes better and better at sensing the target. 
 
-In this journal, I designed an active sensing strategy for uplink localization with multiple reconfigurable intelligent surfaces (RISs). The user with an unknown position repeatedly transmits pilot symbols to the base station (BS). The BS adaptively adjusts its beamforming vector and the RISs based on existing pilots received.  
+In this journal, I designed an active sensing strategy for uplink localization with multiple reconfigurable intelligent surfaces (RISs). The user with an unknown position repeatedly transmits pilot symbols to the base station (BS). The BS adaptively adjusts its beamforming vector and the RISs based on existing pilots received. The system diagram is as follows:
 
-<div style="text-align:center"><img src="/assets/posts/activesensing/2ris_position_active.gif" style="width:20em"/></div>
-
+<div style="text-align:center"><img src="/assets/posts/activesensing/sys_model.jpg" style="width:20em"/></div>
 
 Below is an illustration of the beam pattern produced by the active sensing strategy. After six (or any number of) measurements, the two sensing devices (RISs 🔵) can produce a very narrow beam focus toward the target (in red 🔴). Notice that there is constructive interference around the user and deconstructive interference outside of the proximity of the user, which enables very accurate positioning. This beampattern is otherwise difficult to achieve with conventional approaches. 
 
 <div style="text-align:center"><img src="/assets/posts/activesensing/2ris_position_active.gif" style="width:20em"/></div>
+
 
 ## Active sensing via learning
 
@@ -27,10 +27,10 @@ It is difficult to design an adaptive sequence of beams using conventional metho
 
 In this work, we show that machine learning can do better because it can better model the complex wireless environment and machine learning can jointly design the sequence of sensing vector to achieve the optimal performance. 
 
+The neural network architecture is shown below. The idea is that an LSTM network can be used to process the temporal input (pilots). At each sensing stage, the LSTM cell receives a new measurement and maps the measurement (along with historical measurements) to the sensing vectors in the next stage. By concatenating a chain of LSTM cells, a sequence of sensing vectors can be designed. At the end of the sensing stage, an estimated position of the user is obtained based on all received pilots. 
+<div style="text-align:center"><img src="/assets/posts/activesensing/lstm_cell.jpg" style="width:20em"/></div>
 
 
 
-## Summary
 
-Quantifying representational similarity is fundamental to neuroscience & ML. Shape metrics offer a principled way to compare responses of many networks. We develop shape metrics for stochastic neural responses. This method is highly scalable and can be used to compare thousands of networks simultaneously. These analyses can provide direct insight into how representational geometry relates experimental variables of interest (e.g. behaviour, task performance, etc.).
 
