@@ -16,7 +16,7 @@ Code for this post:
 Code for methods in the paper:
 [![Code for methods in paper:](https://img.shields.io/badge/Open on GitHub-success.svg)](https://github.com/ahwillia/netrep)
 
-[Watch my 45min talk on shape metrics.]({% post_url 2023-02-24-mila-talk-shapes %})
+[Watch my 45min talk on shape metrics.]
 
 Neuroscience and machine learning experiments now produce datasets of several animals or networks performing the same task. Below are two matrices representing simultaneously recorded activities from neurons in two different networks.
 
