@@ -20,7 +20,7 @@ Code for methods in the paper:
 
 Neuroscience and machine learning experiments now produce datasets of several animals or networks performing the same task. Below are two matrices representing simultaneously recorded activities from neurons in two different networks.
 
-<div style="text-align:center"><img src="/assets/posts/stochastic_shapes/network_matrices.png" style="width:20em"/></div>
+<div style="text-align:center"><img src="/assets/posts/activesensing/sys_model.jpg" style="width:20em"/></div>
 
 You can think of these as responses from two different animals, or two brain regions, or two deep net layers. Each column is a neuron and each row is the population response to a given stimulus condition. A fundamental question in neural representation learning & neuroscience is: Given multiple networks that were doing the same task, how related are their neural representations of the task? These two network matrices are high-dimensional, with the number of dimensions equal to the number of neurons, but for the sake of visualization, let’s assume responses each lie on some low 3D manifold of responses where each row of the matrix representing the population response to a condition is is plotted as a colored point in this space.
 
