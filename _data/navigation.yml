@@ -2,8 +2,8 @@
 main:
   - title: "notes"
     url: /notes/
-  - title: "code"
-    url: /code/
+  #- title: "code"
+  #  url: /code/
     # - title: "projects"
     # url: /projects/
   - title: "cv"
