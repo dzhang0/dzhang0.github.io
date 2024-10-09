@@ -3,7 +3,7 @@ classes: wide
 title: Codebook learning for active sensing
 tags: ml codebook sensing wireless
 header:
-    teaser: "assets/posts/activesensing/2ris_position_active.gif"
+    teaser: "assets/posts/codebooklearning/nnarchitect_v3_page-0001.jpg"
 excerpt_separator: <!--more-->
 ---
 A no-math intuitive account of my conference publication in SPAWC 2024.
