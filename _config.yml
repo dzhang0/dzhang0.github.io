@@ -25,7 +25,7 @@ url                      : "https://dzhang0.github.io/" # the base hostname & pr
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://dzhang0.github.io/" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/lyndon_saggital_cropped.gif" # path of logo image to display in the masthead
+logo                     : "/assets/images/icons8-wi-fi.gif" # path of logo image to display in the masthead
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 150
