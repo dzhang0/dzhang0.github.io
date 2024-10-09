@@ -19,8 +19,11 @@ Most existing codebook designs for RIS are not tailored for active sensing where
 
 Here, I propose a learning-based approach for codebook construction and codeword selection for active sensing. The proposed learning approach can locate a target in the service area by recursively selecting a sequence of codewords from the codebook as more measurements become available without exhaustive beam training. The codebook design and the codeword selection fuse key ideas from vector quantized-variational autoencoder (VQVAE) and long short-term memory (LSTM) network to learn respectively the discrete function space of the codebook and the temporal dependencies between measurements. 
 <div style="text-align:center"><img src="/assets/posts/codebooklearning/nnarchitect_v3_page-0001.jpg" style="width:50em"/></div>
+The neural network architecture is shown above. The idea is that an LSTM network can be used to process the temporal input (pilots). At each sensing stage, the LSTM cell receives a new measurement and maps the measurement (along with historical measurements) to the sensing vectors in the next stage. The sensing vectors are then mapped to a codeword via vector quantization (VQ). However, the  VQ operation lacks a gradient, which renders backward propagation ineffective in updating the LSTM network during the backward propagation. To address this issue, we use the idea of gradient approximation to estimate the unknown gradient to allow for weight updates.
+Finally, by concatenating a chain of LSTM cells, a sequence of sensing codewords can be selected and optimized. Through many training samples, all the codewords in the codebook is selected and optimized. 
 
 
+## Poster:
 <div style="text-align:center"><img src="/assets/posts/codebooklearning/poster.jpg" style="width:50em"/></div>
 
 
