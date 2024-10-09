@@ -15,8 +15,7 @@ When we talk about active sensing, we mean that the set of sensing vectors is se
 For example, the beam pattern below illustrates the difference between fixed sensing strategy vs.. active sensing strategy. 
 On the right is the beam pattern produced by the active sensing strategy, after six measurements, the sensing device can produce a very narrow beam focus toward the target, which enables high sensing accuracy. 
 
-<div style="text-align:left"><img src="/assets/posts/activesensing/1ris_position_fixed.gif" style="width:20em"/></div>
-<div style="text-align:right"><img src="/assets/posts/activesensing/1ris_position_active.gif" style="width:20em"/></div>
+<div style="text-align:left"><img src="/assets/posts/activesensing/1ris_position_fixed.gif" style="width:20em"/></div><div style="text-align:right"><img src="/assets/posts/activesensing/1ris_position_active.gif" style="width:20em"/></div>
 
 In this journal, I designed an active sensing strategy for multiple reconfigurable intelligent surfaces (RISs), such that after six (or any number of) measurements, the two sensing devices (RISs) can produce a very narrow beam focus toward the target. There is constructive interference around the user and deconstructive interference outside of the proximity of the user, which enables very accurate positioning. This beampattern is otherwise difficult to achieve with conventional approaches. 
 
