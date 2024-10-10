@@ -16,6 +16,7 @@ In this journal, I designed a learning-based approach for user scheduling proble
 ## Learn to schedule
 
 The idea is to use a single neural network to map received pilots from all the users to schedule, RIS pattern and BS beamforming vector simultaneously as follows (btw this figure is selected as the cover for this JSTSP issue)
+
 <div style="text-align:center"><img src="/assets/posts/scheduling/JSTSP_cover.jpg" style="width:25em"/></div> 
 
 However, it is difficult to train a single neural network to learn this mapping. We make three key observations and design a three-stage framework to successively determine the schedule, RIS pattern and beamforming vector: 1) scheduling and beamforming require different precision of channel knowledge, 2) scheduling decision is implicit in the designed beamformers for all users and 3)channel estimation with fixed scheduling and RIS configuration is much easier. 
