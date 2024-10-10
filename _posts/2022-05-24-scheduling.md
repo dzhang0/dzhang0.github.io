@@ -11,9 +11,18 @@ A no-math intuitive account of my journal publication in JSTSP 2022.
 
 Journal paper: <a href="https://arxiv.org/abs/2205.06396">Arxiv</a>, <a href="https://ieeexplore.ieee.org/abstract/document/9783100">IEEE</a>
 
+In this journal, I designed a learning-based approach for user scheduling problems in reconfigurable intelligent surface (RIS) assisted multiuser downlink. Here, the key question is that the base station (BS) is equipped with M antennas, which can serve at most M users simultaneously over the same resource block, if the total number of users in the network K is greater than M, how should the BS optimally schedule a subset of users at each timeslot in conjunction with the optimal RIS configuration and the BS beamforming to achieve high network throughput while ensuring fairness across the users?
 
-<div style="text-align:center"><img src="/assets/posts/scheduling/JSTSP_cover.jpg" style="width:30em"/></div>
+## Learn to schedule
 
+The idea is to use a single neural network to map received pilots from all the users to schedule, RIS pattern and BS beamforming vector simultaneously as follows (this figure is selected as the coverpage of this JSTSP issue)
+<div style="text-align:center"><img src="/assets/posts/scheduling/JSTSP_cover.jpg" style="width:25em"/></div> 
+
+However, it is difficult to train a single neural network to learn this mapping. 
+
+
+
+<div style="text-align:center"><img src="/assets/posts/scheduling/JSTSP_cover.jpg" style="width:25em"/></div>
 
 Active sensing is a sequential sensing strategy that enables fast and high-precision sensing, specifically for mm-wave wireless applications. 
 When we talk about active sensing, we mean that the set of sensing vectors is sequentially designed as a function of existing measurements. As more measurements become available, the sensing vector becomes better and better at sensing the target. 
@@ -26,18 +35,3 @@ Below is an illustration of the beam pattern produced by the active sensing stra
 
 
 
-## Active sensing via learning
-
-
-
-
-## My project
-
-I wrote up the results for a conference paper, which was accepted to IEEE Int'l Conference on Acoustics, Speech and Signal Processing 2023 (ICASSP) taking place in Rhodes Greece [(arXiv:2210.14308)](https://doi.org/10.48550/arXiv.2301.11955)!
-Figure 1 of the paper (below) shows the architecture of the model.
-I developed a method that serves as a (non)linear drop-in replacement for or _augmentations_ to existing transform coding modules in the AV1 codec.
-The TL;DR is that a base autoencoder and hyperprior are trained on a large dataset of video frames prediction residuals.
-To allow the model to operate at different bit rates, we can train auxiliary parameters (gain modulations; pink) to control the rate-dependent output scale at each layer.
-In the paper, we show the model can be trained end-to-end, and that we can augment the DCT with learned gain modulations (quantization matrices), and hyperpriors to significantly improvement performance at a fraction of the cost of a full-blown nonlinear transform (e.g. a deep net).
-
-![architecture](/assets/posts/scheduling/JSTSP_cover.jpg)
