@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
 A no-math intuitive account of my journal publication in TWC 2024.
 <!--more-->
 
-Journal paper: <a href="https://arxiv.org/abs/2312.09002">Arxiv</a>, <a href="https://ieeexplore.ieee.org/document/10373816">IEEE</a>
+Journal paper: <a href="https://arxiv.org/abs/2312.09002">Arxiv</a>, <a href="https://ieeexplore.ieee.org/document/10373816">IEEE</a>. I presented a <a href="https://ieeexplore.ieee.org/abstract/document/10279094">conference</a> version of this paper at ICC in Rome, Italy. 
 
 
 Active sensing is a sequential sensing strategy that enables fast and high-precision sensing, specifically for mm-wave wireless applications. 
